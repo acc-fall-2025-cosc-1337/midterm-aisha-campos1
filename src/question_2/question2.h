@@ -1,1 +1,7 @@
+#ifndef question2.h
+#define question2.h
+
 bool test_config();
+ 
+double get_kinetic_energy(double mass, double velocity);
+#endif
