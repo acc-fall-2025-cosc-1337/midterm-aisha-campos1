@@ -17,3 +17,10 @@ test_case "decimal_to_hex"
 	REQUIRE(decimal_to_hex(255) == "FF");
 	REQUIRE(decimal_to_hex(4095) == "FFF");
 }
+test_case hex_to_decimal
+{
+	REQUIRE(hex_to_decimal("0") == 0);
+	REQUIRE(hex_to_decimal("A") == 10);
+	REQUIRE(hex_to_decimal("FF") == 255);
+	REQUIRE(hex_to_decimal("FFF") == 4095);
+}
